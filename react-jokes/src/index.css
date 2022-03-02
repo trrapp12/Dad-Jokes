@@ -1,9 +1,9 @@
 body {
-  background-color: black;
+  background-color: #F23E2E;
   font-family: '3dumbregular';
   font-size: 2em;
   padding: 3em;
-  color: white;
+  color: #F2BB16;
 }
 
 @font-face {
@@ -16,7 +16,7 @@ body {
 }
 
 .container:nth-child(odd) {
-  border: dotted 5px gray;
+  border: dashed 5px #F2BB16;
   padding: 29px;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .punchline{
-  color: black;
+  color: #F23E2E;
   transition: all 500ms ease-in-out;
 }
 
@@ -40,6 +40,10 @@ body {
 
 h1, p {
   font-family: 'Hubballi', cursive;
+}
+
+h1 {
+  color: #F23E2E;
 }
 
 .p-container {
