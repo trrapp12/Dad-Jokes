@@ -1,9 +1,10 @@
 body {
-  background-color: #F23E2E;
-  font-family: '3dumbregular';
+  background-color: #F28241;
+  font-family: 'Shadows Into Light', cursive;
   font-size: 2em;
   padding: 3em;
-  color: #F2BB16;
+  color: white;
+  letter-spacing: 3px;
 }
 
 @font-face {
@@ -29,7 +30,7 @@ body {
 }
 
 .punchline{
-  color: #F23E2E;
+  color: #F28241;
   transition: all 500ms ease-in-out;
 }
 
