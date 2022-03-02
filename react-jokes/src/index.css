@@ -48,7 +48,7 @@ h1 {
 }
 
 .p-container {
-  height: 30vh;
+  min-height: fit-content;
   font-family: 'Hubballi', cursive;
   background-color: white;
   color: black;
