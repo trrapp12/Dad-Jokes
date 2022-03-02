@@ -4,7 +4,11 @@ import Jokes from './Jokes'
 function App () {
   return (
     <div>
-      <p>This is a project designed to practice using props in React.  For a look at what's going on under the hood, please see the GitHub repository at<a href="https://github.com/trrapp12/React-Jokes">React-Jokes</a>.  And while you're waiting, hover over the jokes to reveal the punchline!</p>
+      <div className="p-container">
+        <h1> React Props Practice: React Jokes</h1>
+        <p>This is a project designed to practice using props in React.  For a look at what's going on under the hood, please see the GitHub repository at 
+          <a href="https://github.com/trrapp12/React-Jokes">React-Jokes</a>.  And while you're waiting, hover over the jokes to reveal the punchline!</p>
+      </div>
       <Jokes 
         setup="I got my daughter a fridge for her birthday."
         punchline="I can't wait to see her face light up when she opens it."

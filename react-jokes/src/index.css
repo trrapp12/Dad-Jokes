@@ -37,3 +37,16 @@ body {
   color: white;
   transition:all 500ms ease-in-out;
 }
+
+h1, p {
+  font-family: 'Hubballi', cursive;
+}
+
+.p-container {
+  height: 30vh;
+  font-family: 'Hubballi', cursive;
+  background-color: white;
+  color: black;
+  margin-bottom: 2em;
+  padding: 2em;
+}
