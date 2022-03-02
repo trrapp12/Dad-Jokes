@@ -1,3 +1,39 @@
 body {
-  background-color: red;
+  background-color: black;
+  font-family: '3dumbregular';
+  font-size: 2em;
+  padding: 3em;
+  color: white;
+}
+
+@font-face {
+  font-family: '3dumbregular';
+  src: url('../src/fonts/3dumb-webfont.woff2') format('woff2'),
+       url('../src/fonts/3dumb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.container:nth-child(odd) {
+  border: dotted 5px gray;
+  padding: 29px;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.setup {
+  font-weight: bold;
+}
+
+.punchline{
+  color: black;
+  transition: all 500ms ease-in-out;
+}
+
+.punchline:hover {
+  color: white;
+  transition:all 500ms ease-in-out;
 }
