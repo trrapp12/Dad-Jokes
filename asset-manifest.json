@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Jokes/static/css/main.2e73d717.css",
+    "main.css": "/React-Jokes/static/css/main.571ea4da.css",
     "main.js": "/React-Jokes/static/js/main.c5da4b6e.js",
     "static/media/3dumb-webfont.woff": "/React-Jokes/static/media/3dumb-webfont.49368761dc0361e38586.woff",
     "static/media/3dumb-webfont.woff2": "/React-Jokes/static/media/3dumb-webfont.fffe089d94ba64e02256.woff2",
     "index.html": "/React-Jokes/index.html",
-    "main.2e73d717.css.map": "/React-Jokes/static/css/main.2e73d717.css.map",
+    "main.571ea4da.css.map": "/React-Jokes/static/css/main.571ea4da.css.map",
     "main.c5da4b6e.js.map": "/React-Jokes/static/js/main.c5da4b6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e73d717.css",
+    "static/css/main.571ea4da.css",
     "static/js/main.c5da4b6e.js"
   ]
 }
