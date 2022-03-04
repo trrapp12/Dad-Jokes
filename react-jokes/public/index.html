@@ -28,6 +28,25 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React Jokes</title>
+    <script>
+      (() => {
+        window.addEventListener('load', () => {
+          // by starting with the load event on the window, it makes sure nothing fires until everything is displaying in the window
+          const container = document.getElementsByClassName('container');
+          // selects the container holding the jokes and meta-data.  This is an array of 25 HTML elements
+          
+          for (let i = 0; i < container.length; i++) {
+            //iterates through the 25  containers 
+            
+            container[i].addEventListener('mouseenter', (event) => {
+              container[i].childNodes[1].style.color = 'white'
+                container[i].childNodes[2].childNodes.forEach(element => {element.style.color = 'white'})
+            });
+          }
+
+        });
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

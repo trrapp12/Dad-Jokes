@@ -1,7 +1,11 @@
 import React from 'react'
 import Jokes from './Jokes'
+import jokesData from './jokesData'
 
 function App () {
+  const jokesArray = jokesData.map((value) => {
+    return <Jokes setup={value.setup} punchline={value.punchline} rating={value.rating} attribution={value.attribution} />
+  })
   return (
     <div>
       <div className="p-container">
@@ -12,26 +16,7 @@ function App () {
         <br></br>
         <p>T.R.Rapp</p>
       </div>
-      <Jokes 
-        setup="I got my daughter a fridge for her birthday."
-        punchline="I can't wait to see her face light up when she opens it."
-      />
-      <Jokes 
-        setup="How did the hacker escape the police?"
-        punchline="He just ransomware!"
-      />
-      <Jokes 
-        setup="Why don't pirates travel on mountain roads?"
-        punchline="Scurvy."
-      />
-      <Jokes 
-        setup="Why do bees stay in the hive in the winter?"
-        punchline="Swarm."
-      />
-      <Jokes 
-        setup="What's the best thing about Switzerland?"
-        punchline="I don't know, but the flag is a big plus!"
-      />
+      {jokesArray}
     </div>
 
   )
