@@ -20,6 +20,8 @@ body {
   font-size: .75em;
   color: #F28241;
   transition: all 500ms ease-in-out;
+  min-width: fit-content;
+  margin-right: 10vw;
 }
 
 .attribution {
@@ -35,6 +37,13 @@ body {
 .container:nth-child(odd) {
   border: dashed 5px #F2BB16;
   padding: 29px;
+  transition: 500ms ease-in-out;
+}
+
+.container:nth-child(odd):hover {
+  -webkit-box-shadow: 3px 1px 41px 5px #FFFFFF; 
+  box-shadow: 3px 1px 41px 5px #FFFFFF;
+  transition: 500ms ease-in-out; 
 }
 
 .container {
@@ -77,4 +86,24 @@ h1 {
   color: black;
   margin-bottom: 2em;
   padding: 2em;
+}
+
+@media (max-width: 800px) {
+    body {
+      font-size: 1.15em;
+      padding: 2em;
+  }
+
+  .joke-meta-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .rating {
+    font-size: .75em;
+    color: #F28241;
+    transition: all 500ms ease-in-out;
+    margin-bottom: 40px;
+  }
 }
