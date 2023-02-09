@@ -17,13 +17,18 @@ function App () {
       <div className="circle"></div>
       <h1> Dad Jokes</h1>
       <div className="p-container">
-        <p>This is a project demonstrates passing props in React.  See the code at <a href="https://github.com/trrapp12/React-Jokes">React-Jokes</a>.  And while you're waiting, enjoy a good Dad joke!</p>
-        <br></br>
-        <p>Cheers,</p>
-        <br></br>
-        <p>T.R.Rapp</p>
+        <div className="p-divider-a">
+          <p>This is a project demonstrates passing props in React.  See the code at <a href="https://github.com/trrapp12/React-Jokes">React-Jokes</a>.  And while you're waiting, enjoy a good Dad joke!</p>
+          <br></br>
+          <p>Cheers,</p>
+          <br></br>
+          <p>T.R.Rapp</p>
+        </div>
+        <div className="p-divider-b">
+          {jokesArray[randInt]}
+        </div>
       </div>
-      {jokesArray[randInt]}
+
     </div>
 
   )
