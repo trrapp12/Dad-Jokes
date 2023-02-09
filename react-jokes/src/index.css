@@ -78,7 +78,7 @@ p {
 } */
 
 .container {
-  margin-top: 40%;
+  margin-top: 31%;
   background-color: rgba(255,255,255, .2);
   padding: 29px;
   transition: 500ms ease-in-out;
@@ -152,10 +152,22 @@ p {
       padding: 2em;
   }
 
+  .container {
+    margin-top: 10%;
+  }
+
   .joke-meta-data {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .p-container {
+    flex-direction: column;
+  }
+
+  .p-divider-a {
+    max-width: 100%;
   }
 
   .rating {
@@ -163,5 +175,13 @@ p {
     color: #F28241;
     transition: all 500ms ease-in-out;
     margin-bottom: 40px;
+  }
+
+
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 3rem;
   }
 }
