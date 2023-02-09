@@ -1,11 +1,4 @@
-body {
-  background-color: #F28241;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 2em;
-  padding: 3em;
-  color: white;
-  letter-spacing: 3px;
-}
+/* ---------------------------- fonts ---------------------------- */
 
 @font-face {
   font-family: '3dumbregular';
@@ -16,13 +9,48 @@ body {
 
 }
 
-.rating {
-  font-size: .75em;
-  color: #F28241;
-  transition: all 500ms ease-in-out;
-  min-width: fit-content;
-  margin-right: 10vw;
+/* ---------------------------- elements ---------------------------- */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body {
+  background: rgb(47,34,242);
+background: linear-gradient(67deg, rgba(47,34,242,1) 0%, rgba(242,62,46,1) 69%);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2em;
+  color: white;
+  letter-spacing: 3px;
+  margin: 0px;
+  position: relative;
+}
+
+h1 {
+  font-size: max(10rem, 2vw);
+}
+
+h1, p {
+  font-family: 'Hubballi', cursive;
+  color: white; 
+  margin: 0px;
+}
+
+p {
+  font-size: max(1rem, 2vw);
+}
+
+/* ---------------------------- classes ---------------------------- */
 
 .attribution {
   font-size: .75em;
@@ -30,8 +58,16 @@ body {
   transition: all 500ms ease-in-out;
 }
 
-.hover-effect {
-  color: white;
+.circle {
+  background-color: #F23E2E;
+  border: 5px solid #F28241;
+  border-radius: 90vw;
+  height: 90vw;
+  left: -45vw;
+  position: absolute; 
+  top: -45vw; 
+  width: 90vw; 
+  z-index: -1;
 }
 
 .container:nth-child(odd) {
@@ -50,8 +86,30 @@ body {
   margin-bottom: 50px;
 }
 
-.setup {
-  font-weight: bold;
+.joke-meta-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hover-effect {
+  color: white;
+}
+
+.master-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.p-container {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  font-family: 'Hubballi', cursive;
+  color: black;
+  margin-bottom: 2em;
+  width: 30%;
 }
 
 .punchline{
@@ -65,28 +123,19 @@ body {
   transition:all 500ms ease-in-out;
 }
 
-h1, p {
-  font-family: 'Hubballi', cursive;
+.rating {
+  font-size: .75em;
+  color: #F28241;
+  transition: all 500ms ease-in-out;
+  min-width: fit-content;
+  margin-right: 10vw;
 }
 
-h1 {
-  color: #F23E2E;
+.setup {
+  font-weight: bold;
 }
 
-.joke-meta-data {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.p-container {
-  min-height: fit-content;
-  font-family: 'Hubballi', cursive;
-  background-color: white;
-  color: black;
-  margin-bottom: 2em;
-  padding: 2em;
-}
+/* ---------------------------- media queries ---------------------------- */
 
 @media (max-width: 800px) {
     body {
