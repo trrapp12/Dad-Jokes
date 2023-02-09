@@ -27,6 +27,17 @@ function App () {
         <div className="p-divider-b">
           {jokesArray[randInt]}
         </div>
+        <div className="second-circle">
+        <svg viewBox="0 0 10 10">
+          <circle cx='50' cy='50' r='50'>
+            <animate
+              attributeName="cx"
+              values="0;5;0"
+              dur="10s"
+              repeatCount="indefinite" />
+          </circle>
+        </svg>
+        </div>
       </div>
 
     </div>

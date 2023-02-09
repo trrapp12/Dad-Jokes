@@ -139,6 +139,11 @@ p {
   margin-right: 10vw;
 }
 
+.second-circle {
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
 .setup {
   font-weight: bold;
   color: rgba(255,255,255,.8);
