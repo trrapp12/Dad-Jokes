@@ -39,15 +39,26 @@ body {
   position: relative;
 }
 
+button {
+  width: 100px;
+  padding: 1rem;
+  color: white;
+  max-height: fit-content;
+  border-radius: 5px;
+  background-color: blueviolet;
+  border: 1px solid white;
+}
+
 h1 {
   font-size: max(7rem, 2vw);
 }
 
-h1,
-p {
+h1, p {
   font-family: '3dumbregular';
   color: white;
   margin: 0px;
+  position: relative;
+  z-index: 1;
 }
 
 p {
@@ -58,7 +69,7 @@ p {
 /* ---------------------------- classes ---------------------------- */
 
 .attribution {
-  font-size: 1.5em;
+  font-size: .85em;
   color: #2f22f;
   transition: all 500ms ease-in-out;
 }
@@ -73,7 +84,7 @@ p {
   position: absolute;
   top: -45vw;
   width: 90vw;
-  z-index: -1;
+  z-index: 0;
 }
 
 .circle-gradient {
@@ -103,7 +114,7 @@ p {
 }
 
 .container {
-  margin-top: 18%;
+  margin-top: 14%;
   background-color: rgba(255, 255, 255, .2);
   padding: 29px;
   transition: 500ms ease-in-out;
@@ -116,6 +127,14 @@ p {
   margin-top: 1em;
 }
 
+.joke-and-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
 .hover-effect {
   color: white;
 }
@@ -125,6 +144,10 @@ p {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 5em;
+}
+
+.p-and-button-container{
+  display: flex;
 }
 
 .p-container {
@@ -143,6 +166,9 @@ p {
 
 .p-divider-b {
   flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .punchline {
@@ -171,8 +197,8 @@ p {
   min-width: -moz-fit-content;
   min-width: fit-content;
   position: absolute;
-  left: 69%;
-  bottom: 35%;
+  left: 72%;
+  bottom: 44%;
   z-index: -1;
 }
 
