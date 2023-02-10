@@ -18,7 +18,7 @@ function App () {
       <h1> Dad Jokes</h1>
       <div className="p-container">
         <div className="p-divider-a">
-          <p>This is a project demonstrates passing props in React.  See the code at <a href="https://github.com/trrapp12/React-Jokes">React-Jokes</a>.  And while you're waiting, enjoy a good Dad joke!</p>
+          <p>This project demonstrates passing props in React.  See the code at <a href="https://github.com/trrapp12/React-Jokes">React-Jokes</a>.  And while you're waiting, enjoy a good Dad joke!</p>
           <br></br>
           <p>Cheers,</p>
           <br></br>
@@ -28,9 +28,9 @@ function App () {
           {jokesArray[randInt]}
         </div>
         <div className="second-circle">
-        <div class="circle-gradient">
-          <div class="circle2">
-            <p>click</p>
+        <div className="circle-gradient">
+          <div className="circle2" id="circle2">
+            <p id="circle2--p">click</p>
           </div>
         </div>
         </div>

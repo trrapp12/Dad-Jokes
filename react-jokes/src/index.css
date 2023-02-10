@@ -31,8 +31,8 @@ body {
   background: rgb(47, 34, 242);
   background: linear-gradient(67deg, rgba(47, 34, 242, 1) 0%, rgba(242, 62, 46, 1) 69%);
   color: white;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 2em;
+  font-family: '3dumbregular';
+  font-size: 16px;
   letter-spacing: 3px;
   margin: 0px;
   min-height: 100vh;
@@ -40,31 +40,33 @@ body {
 }
 
 h1 {
-  font-size: max(10rem, 2vw);
+  font-size: max(7rem, 2vw);
 }
 
 h1,
 p {
-  font-family: 'Hubballi', cursive;
+  font-family: '3dumbregular';
   color: white;
   margin: 0px;
 }
 
 p {
   font-size: max(1rem, 2vw);
+  font-family: 'Hubballi', cursive;
 }
 
 /* ---------------------------- classes ---------------------------- */
 
 .attribution {
-  font-size: .5em;
-  color: #F28241;
+  font-size: 1.5em;
+  color: #2f22f;
   transition: all 500ms ease-in-out;
 }
 
 .circle {
-  background-color: #F23E2E;
-  border: 5px solid #F28241;
+  background: rgb(242,62,46);
+  background: linear-gradient(67deg, rgba(242,62,46,1) 0%, rgba(242,75,50,1) 20%, rgba(242,130,65,1) 57%);
+  border: 20px solid #F28241;
   border-radius: 90vw;
   height: 90vw;
   left: -45vw;
@@ -84,26 +86,24 @@ p {
 .circle2 {
   display: flex;
   justify-content: center;
-  align-content: center;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 50px auto;
   border-radius: 50%;
-  border: solid 2px rgab(0, 0, 0, .2);
-  background-color: blue;
   animation: circle-animation 30s linear infinite;
   background: rgb(255, 175, 25);
-  background: linear-gradient(90deg, rgba(255, 175, 25, 1) 3%, rgba(140, 50, 42, 1) 39%, rgba(93, 33, 176, 1) 87%);
+  background: linear-gradient(90deg, rgba(242,130,65,1) 10%, rgba(140, 50, 42, 1) 52%, rgba(93, 33, 176, 1) 87%);
 }
 
-/* .container:nth-child(odd):hover {
-  -webkit-box-shadow: 3px 1px 41px 5px #FFFFFF; 
-  box-shadow: 3px 1px 41px 5px #FFFFFF;
-  transition: 500ms ease-in-out; 
-} */
+.circle2 > p {
+  align-self: center;
+  transition: all 500ms ease-in-out;
+  animation: fade-in-out 4000s linear infinite;
+  font-family: '3dumbregular';
+}
 
 .container {
-  margin-top: 31%;
+  margin-top: 18%;
   background-color: rgba(255, 255, 255, .2);
   padding: 29px;
   transition: 500ms ease-in-out;
@@ -124,7 +124,7 @@ p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 2em;
+  padding: 5em;
 }
 
 .p-container {
@@ -146,9 +146,10 @@ p {
 }
 
 .punchline {
-  color: #F28241;
+  color: #2f22f;
   transition: all 500ms ease-in-out;
-  margin-top: 1.25em;
+  margin-top: 1.5em;
+  font-size: 1.75em;
 }
 
 .punchline:hover {
@@ -157,21 +158,29 @@ p {
 }
 
 .rating {
-  font-size: .75em;
-  color: #F28241;
+  font-size: 1.75em;
+  color: ##2f22f2;
   transition: all 500ms ease-in-out;
   min-width: fit-content;
   margin-right: 10vw;
 }
 
 .second-circle {
+  min-height: -moz-fit-content;
   min-height: fit-content;
+  min-width: -moz-fit-content;
   min-width: fit-content;
+  position: absolute;
+  left: 69%;
+  bottom: 35%;
+  z-index: -1;
 }
 
 .setup {
+  font-family: '3dumbregular';
   font-weight: bold;
   color: rgba(255, 255, 255, .8);
+  font-size: 2rem;
 }
 
 /* ---------------------------- media queries ---------------------------- */
@@ -202,11 +211,14 @@ p {
 
   .rating {
     font-size: .75em;
-    color: #F28241;
+    color: #2f22f;
     transition: all 500ms ease-in-out;
     margin-bottom: 40px;
   }
 
+  .setup {
+    font-size: 1.25rem;
+  }
 
 }
 
@@ -271,5 +283,22 @@ p {
   100% {
     transform: rotate(360deg);
     border-radius: 50%;
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    color: white;
+  }
+
+  0% {
+    opacity: 1;
+    color: #F28241;
+  }
+
+  100% {
+    opacity: 0;
+    color: white;
   }
 }
