@@ -4,16 +4,21 @@ import jokesData from './jokesData'
 
 function App () {
 
-  const jokesArray = jokesData.map((value) => {
+ const jokesComponentArray = jokesData.map((value) => {
     return <Jokes setup={value.setup} punchline={value.punchline} rating={value.rating} attribution={value.attribution} />
   })
 
-  function handleClick() {
-    return (jokesArray[Math.floor(Math.random() * jokesArray.length) + 1])
+ function chooseJoke(arr) {
+    return arr[Math.floor(Math.random() * jokesComponentArray.length)]
   }
 
-  let x = handleClick();
+ let jokes = chooseJoke(jokesComponentArray)
 
+ const [state, updateState] = React.useState([jokes])
+
+ function clickHandler() {
+  updateState(chooseJoke(jokesComponentArray))
+ }
 
   return (
     <div className="master-container">
@@ -30,9 +35,9 @@ function App () {
           </div>
           <div className="joke-and-button-container">
             <div className="p-divider-b">
-              {x}
+              {state}
             </div>
-            <button onClick={() => {handleClick()}}>Next &gt;&gt;&gt;</button>
+            <button onClick={clickHandler}>Next &gt;&gt;&gt;</button>
           </div>
         </div>
       </div>
