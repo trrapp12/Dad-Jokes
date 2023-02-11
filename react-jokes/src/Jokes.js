@@ -1,15 +1,19 @@
 import React from 'react'
 
 function Jokes(props) {
+
+  const styles = {
+    transition: 'all 500ms ease-in'
+  }
+
   return (
-    <div className="container">
+    <div style={styles} className="container">
       <div className="setup">{props.setup}</div>
       <div className="punchline">{props.punchline}</div>
       <div className="joke-meta-data">
         <div className="rating">rating {props.rating}  &#10032; </div>
         <div className="attribution">	-- {props.attribution}</div>
       </div>
-      
     </div>
 
   )

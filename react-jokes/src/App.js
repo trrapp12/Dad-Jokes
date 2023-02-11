@@ -21,13 +21,13 @@ function App () {
  }
 
   return (
-    <div className="master-container">
+    <div  key={Math.random()} className="master-container">
       <div className="circle"></div>
       <h1> Dad Jokes</h1>
       <div className="p-container">+
         <div className="p-and-button-container">
           <div className="p-divider-a">
-            <p>This project demonstrates passing props in React.  See the code at <a href="https://github.com/trrapp12/React-Jokes">React-Jokes</a>.  And while you're waiting, enjoy a good Dad joke!</p>
+            <p>This project demonstrates passing props in React.  See the code at <a href="https://github.com/trrapp12/React-Jokes">React-Jokes</a>.  And while you're waiting, hover to enjoy a good Dad joke!</p>
             <br></br>
             <p>Cheers,</p>
             <br></br>
@@ -44,7 +44,7 @@ function App () {
       <div className="second-circle">
           <div className="circle-gradient">
             <div className="circle2" id="circle2">
-              <p id="circle2--p">click</p>
+              <p id="circle2--p"></p>
             </div>
           </div>
         </div>

@@ -6,8 +6,9 @@
     url('../src/fonts/3dumb-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
+
+
 
 /* ---------------------------- elements ---------------------------- */
 
@@ -62,8 +63,8 @@ h1, p {
 }
 
 p {
-  font-size: max(1rem, 2vw);
-  font-family: 'Hubballi', cursive;
+  font-size: max(.75rem, 1.5vw);
+  font-family: 'Antic Slab', serif;
 }
 
 /* ---------------------------- classes ---------------------------- */
@@ -116,7 +117,7 @@ p {
 .container {
   margin-top: 14%;
   background-color: rgba(255, 255, 255, .2);
-  padding: 29px;
+  padding: 3em;
   transition: 500ms ease-in-out;
 }
 
@@ -151,7 +152,7 @@ p {
 }
 
 .p-container {
-  font-family: 'Hubballi', cursive;
+  font-family: 'Antic Slab', serif;
   color: black;
   margin-bottom: 2em;
   display: flex;
@@ -172,16 +173,20 @@ p {
 }
 
 .punchline {
-  color: white;
+  color: #2f22f2;
+  font-weight: 900;
   transition: all 500ms ease-in-out;
   margin-top: 1.5em;
   font-size: 1.75em;
+  opacity: 0;
+  transition: all 500ms ease-in;
 }
 
-.punchline:hover {
-  color: white;
-  transition: all 500ms ease-in-out;
+.container:hover > .punchline {
+  opacity: 1;
+  transition: all 500ms ease-in;
 }
+
 
 .rating {
   font-size: 1.75em;
@@ -205,7 +210,7 @@ p {
 .setup {
   font-family: '3dumbregular';
   font-weight: bold;
-  color: rgba(255, 255, 255, .8);
+  color: white;
   font-size: 2rem;
 }
 
