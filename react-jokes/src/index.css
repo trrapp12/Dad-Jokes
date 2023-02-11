@@ -44,10 +44,11 @@ button {
   width: 100px;
   padding: 1rem;
   color: white;
+  max-height: -moz-fit-content;
   max-height: fit-content;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: blueviolet;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 h1 {
@@ -85,7 +86,7 @@ p {
   position: absolute;
   top: -45vw;
   width: 90vw;
-  z-index: 0;
+  z-index: 1;
 }
 
 .circle-gradient {

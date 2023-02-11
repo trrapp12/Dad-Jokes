@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Jokes from './Jokes'
 import jokesData from './jokesData'
 
+
 function App () {
 
+  function addScript() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = './words.js'
+    document.body.appendChild(script)
+  }
+
  const jokesComponentArray = jokesData.map((value) => {
-    return <Jokes setup={value.setup} punchline={value.punchline} rating={value.rating} attribution={value.attribution} />
+    return <Jokes setup={value.setup} punchline={value.punchline} rating={value.rating} attribution={value.attribution} state={state}/>
   })
 
  function chooseJoke(arr) {
@@ -14,11 +22,17 @@ function App () {
 
  let jokes = chooseJoke(jokesComponentArray)
 
+// state has to be below jokes so that it initiates with something inside the array 
  const [state, updateState] = React.useState([jokes])
+ console.log(state)
 
  function clickHandler() {
   updateState(chooseJoke(jokesComponentArray))
  }
+
+ useEffect(() => {
+  addScript()
+ },[jokes])
 
   return (
     <div  key={Math.random()} className="master-container">

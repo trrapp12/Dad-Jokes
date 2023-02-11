@@ -1,5 +1,7 @@
+(() => {
+
 // import { wordsData } from "../src/wordsData"
-window.addEventListener('load', () => {
+
 
 const wordsData = [
     'laugh',
@@ -127,9 +129,10 @@ function resetWord (int) {
     container.innerText = wordsData[newInt]
 }
 
+resetWord()
+
 setInterval(() => {
     resetWord();
 }, 4000);
 
-   
-})
+})()
