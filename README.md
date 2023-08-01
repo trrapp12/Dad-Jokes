@@ -3,7 +3,9 @@
 
 
 
-##### Contributors: Trevor Rapp
+##### Contributors: Trevor Rapp, Bob Ziroll
+
+*this exercise was included as part of a Front End Developer course on Scrimba, taught by Bob Ziroll.  Though it was only a side-note in the lesson, I turned it into a full blown project to give myself extra practice*
 
 ---
 
@@ -38,12 +40,11 @@
 > --AltAcademy, *Best React Jokes*
 
 
-
 A basic static page built using React that utilizes props.
 
 ---
 
-### Project v1.0 demonstrates the following:
+### PROJECT DEMONSTRATES THE FOLLOWING:
 
 - [x] Use of JSX
 - [x] Use of basic syntax and architecture of React
@@ -82,26 +83,22 @@ A basic static page built using React that utilizes props.
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
 
 - [X] change in design elements
-- [X] instead of dynamically creating one element, built it out to dynamically build out a nested element that also dynamically assigned classes, attributes, and added an eventlistener
-- [X] using Javascript to imitate a "hover" effect in CSS
-- [X] simplifying and refactoring code and breaking it out into a utility function file
-- [X] AI generated artwork
-- [ ] gamification principles
-- [ ] Oauth
+- [X] by changing the design of the project I created changes down stream that forced me to rebuild my components.  This was perfect because it forced me to create my own comoponents and practice passing down props through them.
+- [X] my additional design changes eventually also created changes in how I wrote my state as well.
+- [X] I eventually refactored the whole project again to give myself more practice and to improve the UX/UI.  This allowed me to build it again from scratch, without any help.
+- [X] See redesigned, final project at <a href="https://tourmaline-medovik-1e81f3.netlify.app/">Dad Jokes</a>
 
 ---
 
 ### ATTRIBUTIONS
 
-<a href="https://www.flaticon.com/free-icons/skull" title="skull icons">Skull icons created by Smashicons - Flaticon</a>
-
-Memento Mori is AI generated artwork by Trevor Rapp using <a href="https://www.imagine.art/">Imagine Art</a>.
+No additional attributions needed at this time.
 
 ---
 
 ### YOU CAN FIND ME AT:
 
-\**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), or return to my [Github](https://github.com/trrapp12)*
+*For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), or return to my [Github](https://github.com/trrapp12)*
 
 
 
