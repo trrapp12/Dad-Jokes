@@ -11,9 +11,11 @@
 
 <br>
 
-![screenshot-localhost_3000-2022 03 02-07_54_45](https://user-images.githubusercontent.com/11747875/156386294-0178003b-a2e8-442a-a5e2-59beb3274268.png)
-
 [![View Project](https://user-images.githubusercontent.com/11747875/141705232-471a0b9c-ca45-4540-a1b6-740c5e1becbe.png)](https://trrapp12.github.io/React-Jokes/)
+
+<br/>
+
+![screenshot-localhost_3000-2022 03 02-07_54_45](https://user-images.githubusercontent.com/11747875/156386294-0178003b-a2e8-442a-a5e2-59beb3274268.png)
 
 <br>
 
@@ -27,11 +29,10 @@
 <img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
 
 <br>
-<br>
 
 ---
 
-### Description:
+### DESCRIPTION
 
 > "How do React components say 'You're welcome?'"
 >
@@ -40,7 +41,17 @@
 > --AltAcademy, *Best React Jokes*
 
 
-A basic static page built using React that utilizes props.
+*A basic static page built using React that utilizes props.*
+
+<br/>
+
+---
+
+### QUICKSTART GUIDE
+
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/React-Jokes)">https://trrapp12.github.io/React-Jokes/</a>. 
+
+<br/>
 
 ---
 
@@ -55,6 +66,8 @@ A basic static page built using React that utilizes props.
 - [x] Use of CSS and images in React environment
 - [x] Use of import and export statements
 - [x] Use of local server with webpack
+
+<br/>
 
 ---
 
@@ -78,6 +91,8 @@ A basic static page built using React that utilizes props.
     
 ```
 
+<br/>
+
 ---
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
@@ -88,11 +103,15 @@ A basic static page built using React that utilizes props.
 - [X] I eventually refactored the whole project again to give myself more practice and to improve the UX/UI.  This allowed me to build it again from scratch, without any help.
 - [X] See redesigned, final project at <a href="https://tourmaline-medovik-1e81f3.netlify.app/">Dad Jokes</a>
 
+<br/>
+
 ---
 
 ### ATTRIBUTIONS
 
-No additional attributions needed at this time.
+* No additional attributions needed at this time.
+
+<br/>
 
 ---
 
