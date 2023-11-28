@@ -107,6 +107,14 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 ---
 
+### SCRIMBA FRONT END DEVELOPER CAREER CERTIFICATE:
+
+[CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.pdf](https://github.com/trrapp12/dice-game/files/13483804/CERTIFICATE.OF.COMPLETION.-.The.Frontend.Developer.Career.Path.pdf)
+
+<br/>
+
+---
+
 ### ATTRIBUTIONS
 
 * No additional attributions needed at this time.
