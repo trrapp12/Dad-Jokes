@@ -1,9 +1,7 @@
 (() => {
+  // import { wordsData } from "../src/wordsData"
 
-// import { wordsData } from "../src/wordsData"
-
-
-const wordsData = [
+  const wordsData = [
     'laugh',
     'memes',
     'gag',
@@ -114,25 +112,23 @@ const wordsData = [
     'episodes',
     'giggling',
     'hilarity',
-    ]
+  ];
 
-let container = document.getElementById('circle2--p');
-let factor = .1
+  let container = document.getElementById('circle2--p');
+  let factor = 0.1;
 
-function createRandInt () {
-    return Math.floor(Math.random() * wordsData.length)
-    
-}
+  function createRandInt() {
+    return Math.floor(Math.random() * wordsData.length);
+  }
 
-function resetWord (int) {
-    let newInt = createRandInt()
-    container.innerText = wordsData[newInt]
-}
+  function resetWord(int) {
+    let newInt = createRandInt();
+    container.innerText = wordsData[newInt];
+  }
 
-resetWord()
+  resetWord();
 
-setInterval(() => {
+  setInterval(() => {
     resetWord();
-}, 4000);
-
-})()
+  }, 4000);
+})();
