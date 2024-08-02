@@ -4,7 +4,7 @@ import jokesData from './jokesData';
 
 function App() {
   // state has to be below jokes so that it initiates with something inside the array
-  const [state, updateState] = useState([]);
+  const [state, updateState] = useState();
   console.log(state);
 
   function addScript(source) {
@@ -40,6 +40,10 @@ function App() {
     addScript('./words.js');
     addScript('./adjustPadding.js');
   }, [jokes]);
+
+  useEffect(() => {
+    updateState(chooseJoke(jokesComponentArray));
+  }, []);
 
   return (
     <div
