@@ -3,7 +3,7 @@
 
 
 
-##### Contributors: Trevor Rapp, Bob Ziroll
+##### Contributors: Trevor Rapp
 
 *this is a remake of a previous project, React Jokes*
 
@@ -89,6 +89,69 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
           setTimeout(applyOpacity, 500)
   }, [props.state])
     
+```
+
+* In my designs I found that there were two elements that would overlapping, which I wanted, but the one would often make the text within the other unreadable...not acceptable.  So I researched a way to calculate the positions of both relative to eachother and adjust padding when needed.  This became a very expensive operation to do though, so I had to modify it later with a debouncer.  See below:
+
+``` (() => {
+  console.log('adjustPadding found');
+
+  function throttle(func, wait) {
+    let lastTime = 0;
+    return function (...args) {
+      const now = new Date().getTime();
+      if (now - lastTime >= wait) {
+        lastTime = now;
+        func.apply(this, args);
+      }
+    };
+  }
+
+  function resolveOverlap() {
+    const divA = document.getElementById('circle');
+    const divB = document.getElementById('container');
+
+    if (!divA || !divB) {
+      console.log('Elements not found.');
+      return;
+    }
+
+    // Get bounding rectangles
+    const rectA = divA.getBoundingClientRect();
+    const rectB = divB.getBoundingClientRect();
+
+    // Check for overlap
+    function isOverlapping() {
+      console.log('isOverlapping fired');
+      return !(
+        rectA.right < rectB.left ||
+        rectA.left > rectB.right ||
+        rectA.bottom < rectB.top ||
+        rectA.top > rectB.bottom
+      );
+    }
+
+    // Increase padding until no overlap
+    let padding = parseInt(window.getComputedStyle(divB).paddingLeft, 10);
+    let stepSize = 5;
+    while (isOverlapping() && padding < 100) {
+      // Added a max limit to prevent infinite loops
+      console.log('adjusting padding');
+      padding += stepSize;
+      divB.style.paddingLeft = `${padding}px`;
+    }
+
+    console.log(`Padding adjusted to ${padding}px to resolve overlap.`);
+  }
+
+  // Create a throttled version of the resolveOverlap function
+  const throttledResolveOverlap = throttle(resolveOverlap, 100);
+
+  // Attach event listeners
+  window.addEventListener('resize', throttledResolveOverlap);
+  document.addEventListener('DOMContentLoaded', throttledResolveOverlap);
+})();
+
 ```
 
 <br/>
