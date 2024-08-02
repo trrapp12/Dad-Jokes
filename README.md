@@ -5,7 +5,7 @@
 
 ##### Contributors: Trevor Rapp, Bob Ziroll
 
-*this exercise was included as part of a Front End Developer course on Scrimba, taught by Bob Ziroll.  Though it was only a side-note in the lesson, I turned it into a full blown project to give myself extra practice*
+*this is a remake of a previous project, React Jokes*
 
 ---
 
@@ -15,7 +15,7 @@
 
 <br/>
 
-![screenshot-localhost_3000-2022 03 02-07_54_45](https://user-images.githubusercontent.com/11747875/156386294-0178003b-a2e8-442a-a5e2-59beb3274268.png)
+[![screenshot-localhost_3000-2022 03 02-07_54_45](https://user-images.githubusercontent.com/11747875/156386294-0178003b-a2e8-442a-a5e2-59beb3274268.png)](https://user-images.githubusercontent.com/11747875/218291297-69f36beb-ccfd-4657-832b-f80a25814d69.mp4)
 
 <br>
 
