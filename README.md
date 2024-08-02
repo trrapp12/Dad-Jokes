@@ -57,9 +57,11 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 ### PROJECT DEMONSTRATES THE FOLLOWING:
 
-- [x] Use of JSX
+- [x] Use of state and useEffect hooks
+- [x] Use of debouncer
 - [x] Use of basic syntax and architecture of React
 - [x] Use of parent > child components
+- [x] Use of JSX
 - [x] Use of custom composable, reusable components
 - [x] Use of Bable and Webpack through Create React App
 - [x] Use of git CLI and GitHub repositories
