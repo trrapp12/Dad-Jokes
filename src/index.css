@@ -51,6 +51,13 @@ button {
   background-color: blueviolet;
   border: 2px solid white;
   z-index: 10;
+  transition: all 100ms linear;
+}
+
+button:hover,
+button:focus {
+  box-shadow: 0 0 0 3px white;
+  transition: all 100ms linear;
 }
 
 h1 {
@@ -70,6 +77,12 @@ p {
   font-size: max(0.75rem, 1.5vw);
   font-family: 'Antic Slab', serif;
 }
+
+/* ---------------------------- IDs ---------------------------- */
+
+/* .master-container > h1 {
+  align-self: center;
+} */
 
 /* ---------------------------- classes ---------------------------- */
 
