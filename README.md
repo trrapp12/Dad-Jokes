@@ -95,7 +95,9 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 * In my designs I found that there were two elements that would overlapping, which I wanted, but the one would often make the text within the other unreadable...not acceptable.  So I researched a way to calculate the positions of both relative to eachother and adjust padding when needed.  This became a very expensive operation to do though, so I had to modify it later with a debouncer.  See below:
 
-``` (() => {
+```javascript
+
+ (() => {
   console.log('adjustPadding found');
 
   function throttle(func, wait) {
