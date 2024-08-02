@@ -11,7 +11,7 @@
 
 <br>
 
-[![View Project](https://user-images.githubusercontent.com/11747875/141705232-471a0b9c-ca45-4540-a1b6-740c5e1becbe.png)](https://groan-worthy-dad-jokes.com/)
+[![View Project](https://user-images.githubusercontent.com/11747875/141705232-471a0b9c-ca45-4540-a1b6-740c5e1becbe.png)](https://groan-worthy-dad-jokes.com)
 
 <br/>
 
@@ -49,7 +49,7 @@
 
 ### QUICKSTART GUIDE
 
-To use the app simply click on the ```View Project``` button or visit <a href="https://groan-worthy-dad-jokes.com/">https://groan-worthy-dad-jokes.com/</a>. 
+To use the app simply click on the ```View Project``` button or visit <a href="https://groan-worthy-dad-jokes.com">https://groan-worthy-dad-jokes.com</a>. 
 
 <br/>
 
